@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+
+    <header>
+        <h2>My Library</h2>
+    </header>
+    <table></table>
+    <div class="library"></div>
+    <!-- A button to open the popup form -->
+    <button type="button" class="open-button" onclick="openForm()">New Book</button>
+
+    <!-- The form -->
+    <div class="form-popup" id="myForm" >
+    <form action="" id="form-container" class="form-container">
+        <!-- <label for="title"><b>Title</b></label> -->
+        <input type="text" placeholder="Book Title" name="title" id="frtitle" required>
+        
+        <!-- <label for="author"><b>Author</b></label> -->
+        <input type="text" placeholder="Author" name="author" id="frauthor" required>
+        
+        <!-- <label for="pages"><b>Pages</b></label> -->
+        <input type="text" placeholder="Pages" name="pages" id="frpages" >
+        <div class="ckb">
+            <label for="read">Read Book?</label>
+            <input type="checkbox" name="read" value="read" id="frread" />
+        </div>
+
+        
+        <button type="submit" class="btn">Submit</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        
+    </form>
+    </div>
+</body>
+</html>

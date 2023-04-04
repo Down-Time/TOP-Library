@@ -1,13 +1,16 @@
 let myLibrary=[];
 
 
-function Book(title, author, pages, read){
+class Book{
+    constructor(title, author, pages, read){
     this.TITLE=title
     this.AUTHOR=author
     this.PAGES=pages
     this.READ=read
     this.index=myLibrary.length
-}
+}}
+
+  
 /*add book to array*/
 function addBookToLibrary(title, author, pages, read){
     let book=new Book(title, author, pages, read)
